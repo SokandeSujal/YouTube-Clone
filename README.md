@@ -20,7 +20,7 @@ This project is a simple YouTube clone, demonstrating basic web development skil
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/youtube-clone.git
+    git clone https://github.com/SokandeSujal/youtube-clone.git
     cd youtube-clone
     ```
 
@@ -37,4 +37,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Sujal Sokande License.
