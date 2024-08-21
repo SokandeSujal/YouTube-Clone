@@ -10,7 +10,7 @@ def generate_commit_date(days_ago):
     date = datetime.now() - timedelta(days=days_ago)
     return date.strftime('%Y-%m-%dT%H:%M:%S')
 
-for i in range(1, 60):
+for i in range(1, 120):
     for j in range(randint(1, 10)):
         d = f'{i} days ago'
         with open('file.txt', 'a') as file:
