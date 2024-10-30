@@ -4,288 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
-    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <aside>
-        <div class="bars" onclick="toggleSidebar()">
-          <img src="icons/bars.svg" alt="bars" />
+    <header class="header">
+      <div class="header__left">
+        <div class="header__menu">
+          <i class="fas fa-bars"></i>
         </div>
-        <div class="side-icons">
-          <i><img src="icons/home.svg" alt="home" /></i>
-          <p>Home</p>
+        <div class="header__logo">
+          <img
+            src="images/youtube-logo.png"
+            alt="YouTube Logo"
+            class="header__logo-img"
+          />
         </div>
-        <div class="side-icons">
-          <i><img src="icons/compass.svg" alt="explore" /></i>
-          <p>Explore</p>
-        </div>
-        <div class="side-icons">
-          <i><img src="icons/video-gallary.svg" alt="gallery" /></i>
-          <p>Subscriptions</p>
-        </div>
-        <div class="side-icons">
-          <i><img src="icons/video-library.svg" alt="library" /></i>
-          <p>Library</p>
-        </div>
-      </aside>
-      <div class="main-container">
-        <header>
-          <nav>
-            <div class="logo">
-              <img src="images/youtube-logo.png" alt="YouTube Logo" />
-            </div>
-            <div class="center-nav">
-              <div class="search">
-                <input type="text" placeholder="Search" />
-                <img src="icons/search.svg" alt="Search Icon" />
-              </div>
-              <div class="mic">
-                <img src="icons/mic.svg" alt="Mic Icon" />
-              </div>
-            </div>
-            <div class="side-nav">
-              <i><img src="icons/video-add.svg" alt="Video Add Icon" /></i>
-              <i><img src="icons/dot-grid.svg" alt="Dot Grid Icon" /></i>
-              <i><img src="icons/bell.svg" alt="Notification Icon" /></i>
-              <i>
-                <img
-                  src="images/Avatar.png"
-                  alt="Avatar"
-                  height="32px"
-                  style="border-radius: 50%"
-                />
-              </i>
-            </div>
-          </nav>
-          <div class="tags">
-            <div class="tag dark">All</div>
-            <div class="tag light">Mixes</div>
-            <div class="tag light">Crypto</div>
-            <div class="tag light">HTML</div>
-            <div class="tag light">CSS</div>
-            <div class="tag light">JavaScript</div>
-          </div>
-        </header>
-        <main>
-          <div class="card-container">
-            <!-- Example Card -->
-            <div class="card">
-              <img src="images/thumbnail.jpg" alt="thumbnail1" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar1"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-                <div class="content">
-                  <h3>Beautiful Scenery in 4K</h3>
-                  <p class="channel-name">Nature Channel</p>
-                  <div class="content-status">
-                    <p>1M views</p>
-                    <p>1 year ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Add more cards as needed -->
-            <!-- Card 2 -->
-            <div class="card">
-              <img src="images/thumbnail2.jpg" alt="thumbnail2" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar2"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Learn JavaScript in 1 Hour</h3>
-                  <p class="channel-name">Code Academy</p>
-                  <div class="content-status">
-                    <p>500K views</p>
-                    <p>2 months ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-              <img src="images/thumbnail3.jpg" alt="thumbnail3" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar3"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Top 10 CSS Tricks</h3>
-                  <p class="channel-name">Design Tips</p>
-                  <div class="content-status">
-                    <p>800K views</p>
-                    <p>3 weeks ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-              <img src="images/thumbnail4.jpg" alt="thumbnail4" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar4"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Mastering Python</h3>
-                  <p class="channel-name">Tech World</p>
-                  <div class="content-status">
-                    <p>1.2M views</p>
-                    <p>6 months ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Add more cards as needed -->
-            <!-- Card 1 -->
-            <div class="card">
-              <img src="images/thumbnail.jpg" alt="thumbnail1" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar1"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Beautiful Scenery in 4K</h3>
-                  <p class="channel-name">Nature Channel</p>
-                  <div class="content-status">
-                    <p>1M views</p>
-                    <p>1 year ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-              <img src="images/thumbnail2.jpg" alt="thumbnail2" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar2"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Learn JavaScript in 1 Hour</h3>
-                  <p class="channel-name">Code Academy</p>
-                  <div class="content-status">
-                    <p>500K views</p>
-                    <p>2 months ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-              <img src="images/thumbnail3.jpg" alt="thumbnail3" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar3"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Top 10 CSS Tricks</h3>
-                  <p class="channel-name">Design Tips</p>
-                  <div class="content-status">
-                    <p>800K views</p>
-                    <p>3 weeks ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card">
-              <img src="images/thumbnail4.jpg" alt="thumbnail4" />
-              <div class="avatar-content">
-                <div class="avatar">
-                  <img
-                    src="images/avatar copy.png"
-                    alt="avatar4"
-                    height="32px"
-                    style="border-radius: 50%"
-                  />
-                </div>
-
-                <div class="content">
-                  <h3>Mastering Python</h3>
-                  <p class="channel-name">Tech World</p>
-                  <div class="content-status">
-                    <p>1.2M views</p>
-                    <p>6 months ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="icons/dots.svg" alt="dots" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
       </div>
-    </div>
+
+      <div class="header__search">
+        <form class="search-bar">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="header__icons">
+        <div class="header__icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="header__icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="header__icon">
+          <img src="images/Avatar.png" alt="User Avatar" class="avatar" />
+        </div>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar__section">
+        <div class="sidebar__item active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </div>
+        <div class="sidebar__item">
+          <i class="fas fa-compass"></i>
+          <span>Explore</span>
+        </div>
+        <div class="sidebar__item">
+          <i class="fas fa-play-circle"></i>
+          <span>Shorts</span>
+        </div>
+        <div class="sidebar__item">
+          <i class="fas fa-subscription"></i>
+          <span>Subscriptions</span>
+        </div>
+      </div>
+
+      <div class="sidebar__section">
+        <div class="sidebar__item">
+          <i class="fas fa-photo-video"></i>
+          <span>Library</span>
+        </div>
+        <div class="sidebar__item">
+          <i class="fas fa-history"></i>
+          <span>History</span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="categories">
+        <div class="category active">All</div>
+        <div class="category">Music</div>
+        <div class="category">Gaming</div>
+        <div class="category">Live</div>
+        <div class="category">News</div>
+        <div class="category">Sports</div>
+        <div class="category">Learning</div>
+        <div class="category">Fashion</div>
+      </div>
+
+      <div class="videos">
+        <!-- Video cards will be dynamically generated -->
+      </div>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
